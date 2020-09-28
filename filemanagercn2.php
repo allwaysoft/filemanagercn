@@ -1770,7 +1770,7 @@ code.maxheight,pre.maxheight{max-height:512px}input[type="checkbox"]{margin:0;pa
 <link rel="icon" href="<?php echo FM_SELF_URL ?>?img=favicon" type="image/png">
 <link rel="shortcut icon" href="<?php echo FM_SELF_URL ?>?img=favicon" type="image/png">
 <?php if (isset($_GET['view']) && FM_USE_HIGHLIGHTJS): ?>
-<link rel="stylesheet" href="<?php echo FM_HIGHLIGHTJS_STYLE ?>.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/<?php echo FM_HIGHLIGHTJS_STYLE ?>.min.css">
 <?php endif; ?>
 </head>
 <body>
@@ -1796,7 +1796,7 @@ function invert_all(){var l=get_checkboxes();change_checkboxes(l);}
 function checkbox_toggle(){var l=get_checkboxes();l.push(this);change_checkboxes(l);}
 </script>
 <?php if (isset($_GET['view']) && FM_USE_HIGHLIGHTJS): ?>
-<script src="highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <?php endif; ?>
 </body>
