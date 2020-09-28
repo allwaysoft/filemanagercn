@@ -963,7 +963,7 @@ $all_files_size = 0;
 <th style="width:3%"><label><input type="checkbox" title="Invert selection" onclick="checkbox_toggle()"></label></th>
 <th>名称</th><th style="width:10%">大小</th>
 <th style="width:12%">修改时间</th>
-<?php if (!FM_IS_WIN): ?><th style="width:6%">Perms</th><th style="width:10%">Owner</th><?php endif; ?>
+<?php if (!FM_IS_WIN): ?><th style="width:6%">权限</th><th style="width:10%">所有者</th><?php endif; ?>
 <th style="width:13%"></th></tr>
 <?php
 // link to parent folder
