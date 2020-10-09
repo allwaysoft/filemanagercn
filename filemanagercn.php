@@ -454,9 +454,9 @@ if (isset($_POST['group'], $_POST['zip'])) {
         $res = $zipper->create($zipname, $files);
 
         if ($res) {
-            fm_set_msg(sprintf('压缩包<b>%s</b>创建完成', fm_enc($zipname)));
+            fm_set_msg(sprintf('压缩文件<b>%s</b>创建完成', fm_enc($zipname)));
         } else {
-            fm_set_msg('压缩包未创建', 'error');
+            fm_set_msg('压缩文件未创建', 'error');
         }
     } else {
         fm_set_msg('未选择任何项目', 'alert');
@@ -497,9 +497,9 @@ if (isset($_GET['unzip'])) {
         $res = $zipper->unzip($zip_path, $path);
 
         if ($res) {
-            fm_set_msg('压缩包已解压');
+            fm_set_msg('压缩文件已解压');
         } else {
-            fm_set_msg('压缩包未解压', 'error');
+            fm_set_msg('压缩文件未解压', 'error');
         }
 
     } else {
@@ -744,7 +744,7 @@ if (isset($_GET['view'])) {
 
     if ($ext == 'zip') {
         $is_zip = true;
-        $view_title = '压缩包';
+        $view_title = '压缩文件';
         $filenames = fm_get_zif_info($file_path);
     } elseif (in_array($ext, fm_get_image_exts())) {
         $is_image = true;
@@ -781,7 +781,7 @@ if (isset($_GET['view'])) {
                     $total_uncomp += $fn['filesize'];
                 }
                 ?>
-                压缩包内文件数: <?php echo $total_files ?><br>
+                压缩文件内文件数: <?php echo $total_files ?><br>
                 总大小: <?php echo fm_get_filesize($total_uncomp) ?><br>
                 压缩后大小: <?php echo fm_get_filesize($total_comp) ?><br>
                 压缩率: <?php echo round(($total_comp / $total_uncomp) * 100) ?>%<br>
@@ -1059,7 +1059,7 @@ if (empty($folders) && empty($files)) {
 <a href="#" onclick="unselect_all();return false;"><i class="icon-checkbox_uncheck"></i>全部取消</a> &nbsp;
 <a href="#" onclick="invert_all();return false;"><i class="icon-checkbox_invert"></i>反向选择</a></p>
 <p><input type="submit" name="delete" value="删除" onclick="return confirm('确定要删除选定的文件和文件夹吗?')">
-<input type="submit" name="zip" value="打包" onclick="return confirm('确定要创建压缩包吗?')">
+<input type="submit" name="zip" value="压缩" onclick="return confirm('确定要压缩吗?')">
 <input type="submit" name="copy" value="复制"></p>
 </form>
 
