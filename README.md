@@ -8,6 +8,7 @@
 filemanagercn.php use local highlight.min.js and vs.min.css
 
 filemanagercn2.php use online highlight.min.js and vs.min.css
+filemanagercn3.php 工具图标带中文文字链接
 
 filemanager.php english version for linux and windows php, can display chinese
 
