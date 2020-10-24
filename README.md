@@ -4,6 +4,7 @@
 原版https://github.com/alexantr/filemanager
 
 修正版及汉化版https://github.com/allwaysoft/filemanagercn
+filemanagercn.php增加IP黑白名单功能。
 
 filemanagercn.php use local highlight.min.js and vs.min.css
 
