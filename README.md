@@ -1,5 +1,5 @@
 # filemanagercn
-对于无法通过SSH或FTP访问其站点的开发人员而言，这是一种管理文件和文件夹的好解决方案。
+对于无法通过SSH或FTP访问其站点的开发人员而言，这是一种管理文件和文件夹的好解决方案。XP+IE8正常。
 
 原版https://github.com/alexantr/filemanager
 
